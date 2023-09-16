@@ -1,6 +1,6 @@
 var start = document.getElementById("start");
-var rest = document.getElementById("stop");
-var stop = document.getElementById("reset");
+var stop = document.getElementById("stop");
+var reset = document.getElementById("reset");
 
 var wm = document.getElementById("w_minutes");
 var ws = document.getElementById("w_seconds");
@@ -27,8 +27,16 @@ reset.addEventListener("click", function(){
     bs.innerText = "00";
 
     document.getElementById("counter").innerText == 0;
+    stopInterval();
+    startTimer = undefined;
 })
 
+stop.addEventListener("click", function(){
+    stopInterval();
+    startTimer = undefined;
+})
+
+//Start timer function
 function timer(){
     //Work Timer Countdown
     if(ws.innerText != 0){
@@ -58,4 +66,9 @@ function timer(){
 
         document.getElementById("counter").innerText++;
     }
+}
+
+//Stop timer function
+function stopInterval(){
+    clearInterval(startTimer);
 }
