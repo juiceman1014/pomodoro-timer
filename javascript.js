@@ -19,6 +19,16 @@ start.addEventListener("click", function(){
     }
 })
 
+reset.addEventListener("click", function(){
+    wm.innerText = 25;
+    ws.innerText = "00";
+
+    bm.innerText = 5;
+    bs.innerText = "00";
+
+    document.getElementById("counter").innerText == 0;
+})
+
 function timer(){
     //Work Timer Countdown
     if(ws.innerText != 0){
