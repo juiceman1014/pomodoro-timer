@@ -11,6 +11,14 @@ var bs = document.getElementById("b_seconds");
 //store a reference to a timer variable
 var startTimer;
 
+start.addEventListener("click", function(){
+    if(startTimer === undefined){
+        startTimer = setInterval(timer, 1000)
+    }else{
+        alert("Timer is already running");
+    }
+})
+
 function timer(){
     //Work Timer Countdown
     if(ws.innerText != 0){
@@ -24,10 +32,10 @@ function timer(){
     if(wm.innerText == 0 && ws.innerText == 0){
         if(bs.innerText != 0){
             bs.innerText--;
-        }
-    }else if(bm.innerText!=0 && bs.innerText == 0){
+        }else if(bm.innerText!=0 && bs.innerText == 0){
         bs.innerText = 59;
         bm.innerText--;
+        }
     }
 
     //Increment Counter by one if one full cycle is completed
