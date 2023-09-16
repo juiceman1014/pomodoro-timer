@@ -9,23 +9,25 @@
     </head>
 <body>
         <div id = "container">
-            <p id = "work" class = "label">Work:</p> 
+
+            <p id = "work" class = "label">Work:</p>
+            <div id = "work-timer" class = "timer">
+                <p id = "w_minutes">25</p>
+                <p class = "colon">:</p>
+                <p id = "w-seconds">00</p>
+            </div> 
+
             <p id = "break" class = "label">Break:</p>
+            <div id = "break-timer" class = "timer">
+                <p id = "b_minutes">5</p>
+                <p class = "colon">:</p>
+                <p id = "b-seconds">00</p>
+            </div>
+            
             <p id = "cycles" class = "label">Cycles:</p>
-        </div>
-        
-        <div id = "work-timer" class = "timer">
-            <p id = "w_minutes">25</p>
-            <p class = "colon">:</p>
-            <p id = "w-seconds">00</p>
-        </div>
+            <p id = "counter" class = "timer">0</p>
 
-        <p id = "counter" class = "timer">0</p>
 
-        <div id = "break-timer" class = "timer">
-            <p id = "b_minutes">5</p>
-            <p class = "colon">:</p>
-            <p id = "w-seconds">00</p>
         </div>
 
         <button id = "start" class = "btn">Start</button>
