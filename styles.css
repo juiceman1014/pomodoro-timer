@@ -29,3 +29,13 @@ html, body{
     display: flex;
     gap: 10px;
 }
+
+button{
+    background-color: #3882F6;
+    color: white;
+    border-radius: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    
+}
