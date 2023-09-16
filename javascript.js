@@ -11,3 +11,24 @@ var bs = document.getElementById("b_seconds");
 //store a reference to a timer variable
 var startTimer;
 
+function timer(){
+    //Work Timer Countdown
+    if(ws.innerText != 0){
+        ws.innerText--;
+    }else if(wm.innerText!=0 && ws.innerText == 0){
+        ws.innerText = 59;
+        wm.innerText--;
+    }
+
+    //Break Timer Countdown
+    if(wm.innerText == 0 && ws.innerText == 0){
+        if(bs.innerText != 0){
+            bs.innerText--;
+        }
+    }else if(bm.innerText!=0 && bs.innerText == 0){
+        bs.innerText = 59;
+        bm.innerText--;
+    }
+
+    
+}
