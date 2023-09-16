@@ -1,5 +1,13 @@
 html, body{
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    border: 1px solid black;
+    padding: 10px;
 }
 
 #work-timer{
