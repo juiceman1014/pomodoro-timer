@@ -1,0 +1,23 @@
+html, body{
+    height: 100%;
+}
+
+#work-timer{
+    display: flex;
+    gap: 5px;
+}
+
+#break-timer{
+    display: flex;
+    gap: 5px;
+}
+
+#cycles-tracker{
+    display: flex;
+    gap: 5px;
+}
+
+#buttons-container{
+    display: flex;
+    gap: 10px;
+}
