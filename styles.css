@@ -19,6 +19,8 @@ html, body{
     align-items: center;
     font-size: 25px;
     box-shadow: 0 0 10px #023047;
+    background: linear-gradient(to bottom, #f2f2f2, #023047);
+    
 }
 
 #work-timer{
