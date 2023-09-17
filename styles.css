@@ -44,12 +44,13 @@ html, body{
 }
 
 button{
-    background-color: #3882F6;
+    background-color: #023047;
     color: white;
     border-radius: 8px;
     padding: 10px 20px;
     cursor: pointer;
     border: none;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 
@@ -59,12 +60,6 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-button{
-    background-color: #023047;
-    color: white;
-    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover{
