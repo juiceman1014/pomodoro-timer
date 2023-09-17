@@ -52,12 +52,18 @@ button{
     border: none;
 }
 
-#header, button{
+
+#header{
     background-color: #023047;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+button{
+    background-color: #023047;
+    color: white;
     transition: background-color 0.3s, transform 0.2s;
 }
 
