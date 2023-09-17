@@ -1,13 +1,16 @@
 html, body{
     height: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
+
 
 #container{
     border: 1px solid black;
     padding: 10px;
+    margin: auto;
 }
 
 #work-timer{
@@ -38,4 +41,9 @@ button{
     padding-right: 8px;
     cursor: pointer;
     
+}
+
+#header{
+    display: flex;
+    justify-content: center;
 }
